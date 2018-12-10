@@ -1,0 +1,100 @@
+@font-face { font-family: dosis-regular; src: url("font/dosis/Dosis-Regular.ttf"); }
+@font-face { font-family: dosis-bold; src: url("font/dosis/Dosis-Bold.ttf"); } 
+@font-face { font-family: varela-regular; src: url("font/dosis/VarelaRound-Regular.ttf"); }
+* {
+    user-select: none;
+}
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+#content {
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+}
+#headline-container {
+    position: absolute;
+    margin: 10px;
+    background-color: rgba(0,0,0,.7);
+    font-family: varela-regular;
+    z-index: 2;
+    border: 2px solid rgba(0,0,0,.3);
+    -webkit-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.39);
+    box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.39);
+}
+#headline-container .headline {
+    font-size: 2rem;
+    display: block;
+    padding: 10px 30px 10px 30px;
+    color: white;
+}
+#headline-container .headline .material-icons {
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+#headline-container .content {
+    background-color: rgba(255, 255, 255, 1);
+}
+.project-container {
+    position: absolute;
+    z-index: 1;
+    min-width: 100px;
+    min-height: 50px;
+    background-color: rgba(199, 214, 225, 0.9);
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,.7);
+    padding: 10px;
+}
+.project-container .add-project {
+    position: absolute;
+    bottom: -.7rem; 
+    left: -.7rem;
+    background-color: white;
+    padding: .2rem;
+    font-size: 1rem;
+    border: 2px solid rgba(0,0,0,.7);
+    color: rgb(72, 120, 196);
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 100000;
+}
+.project-container .add-project:hover {
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+}
+input, select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+    width: 100%;
+    padding: 5px;
+    font-family: varela-regular;
+    font-size: .7rem;
+}
+input.head {
+    font-weight: bold;
+}
+.invoker {
+    cursor: pointer;
+    border-radius: 20px;
+}
+#headline-menu {
+    padding: 10px;
+}
+#headline-menu .menu-item {
+    padding: 10px;
+    font-size: .7rem;
+    display: block;
+    cursor: pointer;
+}
+#headline-menu .menu-item:hover {
+    color: rgba(0,0,0,.7);
+}
+#headline-menu .menu-item .material-icons {
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
